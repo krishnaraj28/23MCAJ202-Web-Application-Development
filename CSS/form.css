@@ -1,0 +1,22 @@
+form.css
+body{
+    background-color:rgb(221, 221, 195);
+    font-family: monospace;
+    margin-left: 50px;
+}
+h2{
+    
+    color:darkblue;
+    font-size: 50px;
+}
+form{
+    font-size: 15px;
+}
+input {
+    border: 2px solid black;
+}
+button{
+    background-color:chocolate;
+    border-radius: 5px;
+    font-size: 15px;
+}
