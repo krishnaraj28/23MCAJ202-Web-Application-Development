@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Form</title>
+    <style>
+        body {
+            background-color: #edf2f4;
+            font-family: 'Trebuchet MS', Arial;
+            text-align: justify;
+        }
+        .formdiv{
+            width: 600px;
+            background-color: rgb(186, 228, 173);
+            border: 4px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkblue;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        label {
+            display: block;
+            font-size: 17px;
+            margin: 10px 0;
+        }
+
+        input, textarea {
+            border: 2px solid black;
+            padding: 5px;
+            width: 90%;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        button {
+            background-color: chocolate;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="formdiv">
+        <h2>Leave a Comment</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
