@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    
-    <form action="#" method="post">
-        <h2>Registration Form</h2>
+
+    <h2>Form</h2>
+    <form action="#" method="post">                                             <!--form opening-->
         <label>Enter name :</label>
-        <input type="text" placeholder="Enter your name" required><br><br>
-
-        <label>Enter email :</label>
-        <input type="email" placeholder="Enter your email" required><br><br>
-
-        <label>Enter phone :</label>
-        <input type="tel" placeholder="Enter your phone" required><br><br>
-
+        <input type="text" placeholder="Enter your name" required><br><br>      <!--name field-->
         <label>Enter Username :</label>
         <input type="text" placeholder="Enter your Username" required><br><br>
 
-        <label>Enter password :</label>
+        <label>Enter email :</label>
+        <input type="email" placeholder="Enter your email" required><br><br>    <!--Email field-->
+
+        <label>Enter phone :</label>
+        <input type="tel" placeholder="Enter your phone" required><br><br>      <!--Phoneno field-->
+
+        <label>Enter password :</label>                                         <!--password field-->
         <input type="password" required><br><br>
 
-        <label>Select qualification:</label>
+        <label>Select qualification:</label>                                    <!--Qualification dropdown-->
         <select>
             <option>High School</option>
             <option>Bachelor's</option>
@@ -31,31 +32,35 @@
             <option>PhD</option>
         </select><br><br>
 
-        <label>Select gender:</label>
+        <label>Select gender:</label>                                           <!--gender radio button-->
         <input type="radio" name="gender" value="male"> Male
         <input type="radio" name="gender" value="female"> Female
         <input type="radio" name="gender" value="other"> Other<br><br>
 
-        <label>Address:</label><br><br>
-        <textarea placeholder="Enter your Address"></textarea><br><br>
+        <label>Message:</label>                                                 <!--meassage text area-->
+        <textarea placeholder="Enter your message"></textarea><br><br>
 
-        <label>Date of birth:</label>
+        <label>Date of birth:</label>                                           <!--DOB field-->
         <input type="date"><br><br>
 
-        <label>Upload a resume:</label>
+        <label>Upload a resume:</label>                                         <!--Upload field-->
         <input type="file"><br><br>
 
-        <label>Choose your favorite color:</label>
-        <input type="color"><br><br>
-        <label> Subscribe to newsletter</label>
+        <label>Choose your favorite color:</label>                              <!--Color field-->
+        <input type="color" value="#ff5733"><br><br>
+
+        <label>Subscribe to newsletter</label>                                  <!--checkbox-->
         <label>
-            <input type="checkbox">
+            <input type="checkbox"> 
         </label><br><br>
-    <div class="buttondiv">
-        <button type="reset">Reset</button>
+
+        <button type="reset">Reset</button>                                     <!--button for submit and reset-->
         <button type="submit">Submit</button>
-    </div>
     </form>
-   
+
 </body>
 </html>
+        
+       
+   
+   
