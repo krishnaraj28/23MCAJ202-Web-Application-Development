@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inline CSS Example</title>
-</head>
-<body style="border: 2px dashed black; border-radius: 10px; background-color: #b5d4f2; padding: 40px; margin: 30px;">
+    <title>Internal CSS Example</title>
+    <style>                                     /*css-internal*/
+        body{
+            border: 2px dashed black; 
+            border-radius: 10px; 
+            background-color: #b5d4f2; 
+            padding: 40px; 
+            margin: 30px;
 
-    <h1 style="text-align: center; font-family: 'Trebuchet MS', sans-serif; color: darkblue;">
-        HTML
+        }
+        h1{
+            text-align: center; 
+            font-family: 'Trebuchet MS', sans-serif; 
+            color: darkblue;
+        }
+        p{
+            font-family: Arial, sans-serif; 
+            font-size: 16px; 
+            color: rgb(2, 2, 38); 
+            padding: 15px; 
+            text-align: justify;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        HTML            <!--Heading-->
     </h1>
 
-    <p style="font-family: Arial, sans-serif; font-size: 16px; color: rgb(2, 2, 38); padding: 15px; text-align: justify;font-size: 25px;">
+    <p>
        <strong> HTML (HyperText Markup Language) </strong>is the backbone of web development, used to structure and display content on webpages. It consists of elements like headings, paragraphs, images, links, and forms, which define the layout and organization of a page. HTML works alongside CSS for styling and JavaScript for interactivity, making it a fundamental technology for building modern websites. It follows a tag-based syntax, where each element is enclosed within opening and closing tags. With the latest version, HTML5, new features like audio, video, and semantic elements have enhanced web development, making it more efficient and accessible.
     </p>
 
