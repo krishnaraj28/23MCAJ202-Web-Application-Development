@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Change Image and Text</title>
+    <style>                                     /*css style*/
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a2e7ed;
+        }
+        .container {
+            background: rgba(239, 166, 230, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="hoverArea">  <!--intial content that displayed in the screen-->
+        <h1 id="text">Hover over this area</h1> <!--Heading intialy displayed-->
+        <img id="image" src="https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Default Image">
+    </div>
+    
+    <script>
+        const hoverArea = document.getElementById("hoverArea"); //allocate hovering area to a variable
+        const textElement = document.getElementById("text");    //allocate text to a variable using the id
+        const imageElement = document.getElementById("image");  //allocate image to a variable using the id
+
+        hoverArea.addEventListener("mouseover", function() {    //fuction for mouse hover
+            textElement.textContent = "New Text on Hover!";     //the text that appear on hover
+            imageElement.src = "https://images.unsplash.com/photo-1575252663512-b25714ec27f9?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        }); //the image that appear on hover
+
+        hoverArea.addEventListener("mouseout", function() { //fuction for mouse out
+            textElement.textContent = "Hover over this area";   //the text that appear on mouseout
+            imageElement.src = "https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        }); //the image that appear on mouseout
+    </script>
+</body>
+</html>
