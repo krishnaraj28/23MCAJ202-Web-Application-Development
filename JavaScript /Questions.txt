@@ -1,3 +1,0 @@
-1. Create a HTML registration form and to validate the form using JavaScript code
-2.Create a HTML page to change the background color for every click of a button using JavaScript Event Handling.
-3.Create a HTML page to display a new image and text when the mouse comes over the existing content in the page using JavaScript Event Handling
